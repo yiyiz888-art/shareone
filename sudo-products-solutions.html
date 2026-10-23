@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudo 产品与解决方案介绍</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', '"PingFang SC"', '"Microsoft YaHei"', 'sans-serif'] }, colors: { brand: { 50: '#eff6ff', 100: '#dbeafe', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' }, violet: { 50: '#f5f3ff', 100: '#ede9fe', 500: '#8b5cf6', 600: '#7c3aed' } }, boxShadow: { soft: '0 4px 20px -2px rgba(15,23,42,.06)', hover: '0 18px 50px -12px rgba(37,99,235,.18)' } } } }
+  </script>
+  <style>
+    body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    .text-gradient { background: linear-gradient(135deg, #1d4ed8 0%, #7c3aed 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .bg-grid-pattern { background-image: linear-gradient(to right, rgba(15,23,42,.055) 1px, transparent 1px), linear-gradient(to bottom, rgba(15,23,42,.055) 1px, transparent 1px); background-size: 40px 40px; }
+    .glass-header { background: rgba(255,255,255,.86); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
+    .card-transition { transition: all .35s cubic-bezier(.4,0,.2,1); }
+    .card-transition:hover { transform: translateY(-4px); box-shadow: 0 18px 50px -12px rgba(37,99,235,.18); }
+    .kicker { letter-spacing: .18em; }
+    .icon { width: 1em; height: 1em; display: inline-block; vertical-align: -0.125em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .icon-fill { fill: currentColor; stroke: none; }
+    @media (max-width: 767px) {
+      .card-transition:hover { transform: none; }
+      .bg-grid-pattern { background-size: 28px 28px; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <header class="glass-header border-b border-gray-100 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20 md:h-24">
+        <a href="#top" class="flex items-center min-w-0">
+          <img src="https://www.qbitai.com/wp-content/uploads/2021/12/WX20211221-145943@2x-1024x707.png" alt="数牍科技 Logo" class="h-12 sm:h-14 md:h-[72px] w-auto max-w-[170px] sm:max-w-[190px] md:max-w-[220px] object-contain" />
+        </a>
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-500">
+          <a href="#value" class="hover:text-gray-950 transition-colors">愿景使命</a><a href="#products" class="hover:text-gray-950 transition-colors">产品矩阵</a><a href="#solutions" class="hover:text-gray-950 transition-colors">解决方案</a><a href="#proof" class="hover:text-gray-950 transition-colors">交付承诺</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="relative bg-white overflow-hidden border-b border-gray-100 pt-14 pb-16 sm:pt-20 sm:pb-20 md:pt-20 md:pb-24 lg:pt-28 lg:pb-36">
+      <div class="absolute inset-0 bg-grid-pattern opacity-60"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-white/80 to-white"></div>
+      <div class="absolute -top-24 left-1/2 h-80 w-80 rounded-full bg-brand-100 blur-3xl opacity-70"></div>
+      <div class="absolute top-24 right-10 h-72 w-72 rounded-full bg-violet-50 blur-3xl opacity-90"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex max-w-full items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-brand-50 border border-brand-100 text-brand-700 text-xs sm:text-sm font-semibold mb-6 sm:mb-8"><svg class="icon shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3z"></path><path d="M9.5 12l1.8 1.8 3.7-4"></path></svg><span class="truncate sm:whitespace-normal">数据不出域 · Agent 可治理 · 结果可验证</span></div>
+        <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-gray-950 tracking-tight mb-5 sm:mb-7 leading-tight">让 AI 可验证地进入企业运营<br class="hidden md:block"><span class="text-gradient">构建企业自己的 AI 主权</span></h1>
+        <p class="mt-5 sm:mt-6 max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-gray-500 leading-relaxed font-light">面向企业与 FDE 交付团队的 AI Agent 产品与解决方案体系，覆盖 Agent 构建、内网交付、统一治理与知识沉淀，让企业在安全可控的前提下真正用上 AI。</p>
+      </div>
+    </section>
+
+    <section id="value" class="py-16 md:py-24 bg-gray-50 border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-4xl mx-auto mb-10 md:mb-16">
+          <div class="kicker text-xs font-bold text-brand-600 uppercase mb-4">Vision & Mission</div>
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-950 tracking-tight mb-4">让企业 AI 从试点走向可控运营</h2>
+          <p class="text-base sm:text-lg text-gray-500">真正的挑战在于：数据不能出域、Agent 不敢给权限、模型成本不可控、结果无法追溯、项目交付难以沉淀。Sudo 提供一套从交付到运营的闭环能力。</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white border border-gray-100 p-6 sm:p-8 rounded-3xl shadow-soft card-transition text-center"><div class="w-14 h-14 mx-auto bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center mb-6 text-2xl"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10" width="14" height="10" rx="2"></rect><path d="M8 10V7a4 4 0 0 1 8 0v3"></path></svg></div><h3 class="text-xl font-bold text-gray-950 mb-3">数据不出域</h3><p class="text-gray-500 leading-relaxed">支持私有部署与断网作业，明细数据留在企业内网，外部只处理脱敏产物、规则与结果摘要。</p></div>
+          <div class="bg-white border border-gray-100 p-6 sm:p-8 rounded-3xl shadow-soft card-transition text-center"><div class="w-14 h-14 mx-auto bg-purple-50 text-violet-600 rounded-2xl flex items-center justify-center mb-6 text-2xl"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="6" height="5" rx="1.5"></rect><rect x="15" y="4" width="6" height="5" rx="1.5"></rect><rect x="9" y="15" width="6" height="5" rx="1.5"></rect><path d="M9 6.5h6"></path><path d="M6 9v2a4 4 0 0 0 4 4"></path><path d="M18 9v2a4 4 0 0 1-4 4"></path></svg></div><h3 class="text-xl font-bold text-gray-950 mb-3">Agent 管得住</h3><p class="text-gray-500 leading-relaxed">统一身份、权限、审批、审计与生命周期管理，让 Agent 从演示走向可运行、可追责的生产环境。</p></div>
+          <div class="bg-white border border-gray-100 p-6 sm:p-8 rounded-3xl shadow-soft card-transition text-center"><div class="w-14 h-14 mx-auto bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 text-2xl"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"></path><path d="M5 16l4-4 3 3 6-8"></path><path d="M15 7h3v3"></path></svg></div><h3 class="text-xl font-bold text-gray-950 mb-3">经验留在企业</h3><p class="text-gray-500 leading-relaxed">把业务口径、规则、验证集、执行经验沉淀为企业知识与本体资产，工程师撤场后能力仍留在企业。</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="py-16 md:py-24 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-4xl mx-auto mb-10 md:mb-16"><div class="kicker text-xs font-bold text-brand-600 uppercase mb-4">Product Matrix</div><h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-950 tracking-tight mb-4">三件产品，覆盖 Agent 交付全生命周期</h2><p class="text-base sm:text-lg text-gray-500">Studio 负责构建，Box 负责进场，Enterprise 负责长期运营。<br>三件产品既可组合交付，也可按企业当前阶段分步落地。</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <article class="bg-white border border-gray-100 p-6 sm:p-8 rounded-3xl shadow-soft card-transition"><div class="w-14 h-14 bg-brand-50 text-brand-600 rounded-2xl flex items-center justify-center mb-6 text-2xl"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4.5-1 10-10a2.1 2.1 0 0 0-3-3l-10 10L4 20z"></path><path d="M14 7l3 3"></path><path d="M13 20h7"></path></svg></div><h3 class="text-2xl font-bold text-gray-950 mb-3">Sudo FDE Studio</h3><p class="text-brand-600 font-semibold mb-4">一站式 Agent 构建平台</p><p class="text-gray-500 leading-relaxed mb-6">面向 FDE 与交付团队，自动完成环境扫描、数据画像、规则抽取与业务本体构建，帮助工程师把重复搬运交给 AI，把关键判断沉淀为可复用资产。</p><ul class="space-y-2 text-sm text-gray-500"><li>• 扫描环境与授权清单</li><li>• 数据与文档理解</li><li>• 业务本体与 Agent 打包</li><li>• 回放验证与交付文档</li></ul></article>
+          <article class="bg-white border border-gray-100 p-6 sm:p-8 rounded-3xl shadow-soft card-transition"><div class="w-14 h-14 bg-purple-50 text-violet-600 rounded-2xl flex items-center justify-center mb-6 text-2xl"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9L12 3z"></path><path d="M4 7.5l8 4.5 8-4.5"></path><path d="M12 12v9"></path></svg></div><h3 class="text-2xl font-bold text-gray-950 mb-3">Sudo FDE Box</h3><p class="text-violet-600 font-semibold mb-4">进入客户内网的一体机</p><p class="text-gray-500 leading-relaxed mb-6">自带算力、依赖、镜像、代码协同与安全底盘，把 Studio 作业环境和 Enterprise 运行环境带进客户现场，支持断网交付与受控联网。</p><ul class="space-y-2 text-sm text-gray-500"><li>• 本地算力与离线环境</li><li>• 私有 Git、镜像与依赖仓库</li><li>• 数据分级、脱敏与审计</li><li>• 撤场后成果留企</li></ul></article>
+          <article class="bg-white border border-gray-100 p-6 sm:p-8 rounded-3xl shadow-soft card-transition"><div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 text-2xl"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V6l8-3 8 3v15"></path><path d="M8 21v-8h8v8"></path><path d="M9 8h.01"></path><path d="M12 8h.01"></path><path d="M15 8h.01"></path></svg></div><h3 class="text-2xl font-bold text-gray-950 mb-3">Sudo Enterprise</h3><p class="text-emerald-600 font-semibold mb-4">企业私有 AI 基础设施</p><p class="text-gray-500 leading-relaxed mb-6">部署在企业内网，统一管理 Agent、模型调用、权限审计、员工 AI 助手与企业知识沉淀，帮助企业建立自己的 AI 主权。</p><ul class="space-y-2 text-sm text-gray-500"><li>• Moss 统一 Agent 管理</li><li>• Router 模型与算力路由</li><li>• Sudo Work 员工 AI 助手</li><li>• RSI 企业知识内化</li></ul></article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="solutions" class="py-16 md:py-24 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-4xl mx-auto mb-10 md:mb-16"><div class="kicker text-xs font-bold text-brand-600 uppercase mb-4">Solutions</div><h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-950 tracking-tight mb-4">典型解决方案</h2><p class="text-base sm:text-lg text-gray-500">围绕企业最常见的 AI 落地难题，Sudo 提供从轻量纳管到完整交付的多种路径。</p></div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div class="bg-white border border-gray-100 rounded-3xl p-6 sm:p-8 shadow-soft card-transition"><div class="text-sm font-semibold text-brand-600 mb-3">Studio + Box + Enterprise</div><h3 class="text-2xl font-bold text-gray-950 mb-4">多源数据业务 Agent</h3><p class="text-gray-500 leading-relaxed mb-5">面向 ERP、采购、合同、财务等多系统场景，旁路建模、只读接入、不改现有系统，从一个高价值业务问题切入，逐步沉淀可复用业务本体。</p><div class="text-sm text-gray-400">适合：数据分散、口径复杂、跨系统问答与决策辅助。</div></div>
+          <div class="bg-white border border-gray-100 rounded-3xl p-6 sm:p-8 shadow-soft card-transition"><div class="text-sm font-semibold text-brand-600 mb-3">Enterprise / Moss + Router</div><h3 class="text-2xl font-bold text-gray-950 mb-4">企业私有 AI 基础设施</h3><p class="text-gray-500 leading-relaxed mb-5">对已部署模型、已有算力或已有 Dify / LangChain Agent 的企业，先把 Agent 与模型调用管起来，再逐步接入员工助手与知识沉淀。</p><div class="text-sm text-gray-400">适合：Key 分散、成本不清、Agent 无台账、权限审计不足。</div></div>
+          <div class="bg-white border border-gray-100 rounded-3xl p-6 sm:p-8 shadow-soft card-transition"><div class="text-sm font-semibold text-brand-600 mb-3">Studio + Box + Partner Delivery</div><h3 class="text-2xl font-bold text-gray-950 mb-4">交付伙伴人效提升</h3><p class="text-gray-500 leading-relaxed mb-5">为集成商和 IT 服务伙伴提供标准化 FDE 工具链，降低驻场周期，提高交付复用率和验收一次通过率，最终把可运营能力留给甲方。</p><div class="text-sm text-gray-400">适合：项目多、人力紧、交付质量与复用率需要提升。</div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 md:py-24 bg-gray-50 border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div><div class="kicker text-xs font-bold text-brand-600 uppercase mb-4">Security Boundary</div><h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-950 tracking-tight mb-6">可追溯，不等于可见明细</h2><p class="text-base sm:text-lg text-gray-500 leading-relaxed mb-8">Sudo 的核心边界是：让 AI 能回答跨系统问题，但不把底层明细暴露给不该看到的人。员工拿到的是结论、依据路径和口径说明；明细访问仍走企业自己的权限体系。</p><div class="grid grid-cols-1 sm:grid-cols-2 gap-4"><div class="bg-emerald-50 border border-emerald-100 rounded-2xl p-5"><h4 class="font-bold text-gray-950 mb-2">可以沉淀</h4><p class="text-sm text-gray-500">业务本体、规则、映射、验收标准、失败模式。</p></div><div class="bg-rose-50 border border-rose-100 rounded-2xl p-5"><h4 class="font-bold text-gray-950 mb-2">不会带走</h4><p class="text-sm text-gray-500">客户明细数据、敏感属性值、核心域知识图谱。</p></div></div></div>
+          <div class="bg-white border border-gray-100 rounded-3xl shadow-soft p-8"><h3 class="text-2xl font-bold text-gray-950 mb-6">企业得到的交付物</h3><ul class="space-y-4 text-gray-600"><li class="flex gap-3"><svg class="icon text-emerald-500 mt-1 shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>注册在案、可上下线、可回滚的业务 Agent</span></li><li class="flex gap-3"><svg class="icon text-emerald-500 mt-1 shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>可追溯的本体、数据字典、规则与验收集</span></li><li class="flex gap-3"><svg class="icon text-emerald-500 mt-1 shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>统一身份、权限、审批、审计与调用计量</span></li><li class="flex gap-3"><svg class="icon text-emerald-500 mt-1 shrink-0" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"></path></svg><span>留在企业内部的 Agent、治理能力与知识资产</span></li></ul></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proof" class="py-16 md:py-24 bg-gray-950 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-4xl mx-auto mb-10 md:mb-16"><div class="kicker text-xs font-bold text-brand-300 uppercase mb-4">Verifiable Promise</div><h2 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-4">可验证的交付承诺</h2></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8"><div class="text-4xl font-black text-brand-300 mb-4">01</div><h3 class="text-xl font-bold mb-3">数据不出域，AI 仍可用</h3><p class="text-gray-400">明细数据不离开企业内网，员工无需看到底层明细，也能获得跨系统业务结论。</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8"><div class="text-4xl font-black text-brand-300 mb-4">02</div><h3 class="text-xl font-bold mb-3">越权当场拦截</h3><p class="text-gray-400">Agent 试图访问未授权资源时，当场拦截并触发审批，而不是事后补日志。</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-3xl p-6 sm:p-8"><div class="text-4xl font-black text-brand-300 mb-4">03</div><h3 class="text-xl font-bold mb-3">结果可追溯</h3><p class="text-gray-400">每个结论都能回溯到对象、规则、口径版本、裁决记录与调用链编号。</p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white py-8 sm:py-12 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex flex-col md:flex-row justify-between gap-4 sm:gap-6 items-start md:items-center"><div><p class="text-gray-500 max-w-3xl">Studio 让工程师高效构建 Agent，Box 把交付环境带进内网，Enterprise 让 Agent 在企业里进得来、管得住、验得了，并把经验留给企业。</p></div><div class="text-sm text-gray-400">数牍科技产品与解决方案</div></div></div>
+  </footer>
+</body>
+</html>
